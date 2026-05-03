@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 @Component({
     selector: 'app-user-card',
     templateUrl: './user-card.component.html',
@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
     standalone: false,
 })
 export class UserCardComponent {
-    name: string = 'Jibran';
-    age: number = 23;
+    @Input() name: string = 'Jibran';
+    @Input() age: number = 23;
 }
