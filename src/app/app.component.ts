@@ -6,11 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-core-training';
-  userName: string = 'John Doe';
-  userAge: number = 30;
+  userName = 'John Doe';
+  userAge = 30;
+
+  counterValue = 0;
 
   onUserSelected(name: string) {
-    console.log('Selected User: ', name);
+    console.log('Selected User:', name);
+  }
+
+  onCounterChanged(value: number) {
+    this.counterValue = value;
   }
 }

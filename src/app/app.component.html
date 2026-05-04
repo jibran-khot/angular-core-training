@@ -1,5 +1,14 @@
+<!-- User Cards -->
 <app-user-card [name]="userName" [age]="userAge" (userSelected)="onUserSelected($event)">
 </app-user-card>
 
 <app-user-card [name]="'Aman'" [age]="28" (userSelected)="onUserSelected($event)">
 </app-user-card>
+
+<hr>
+
+<!-- Counter -->
+<app-counter [initialCount]="2" (countChanged)="onCounterChanged($event)">
+</app-counter>
+
+<p>Current Counter Value: {{ counterValue }}</p>
