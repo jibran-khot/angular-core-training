@@ -9,8 +9,7 @@ import { CounterComponent } from './challange04/counter/counter.component';
   declarations: [
     AppComponent,
     UserCardComponent,
-    CounterComponent
-  ],
+    CounterComponent],
   imports: [
     BrowserModule
   ],

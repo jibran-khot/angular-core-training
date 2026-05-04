@@ -1,14 +1,19 @@
 <!-- User Cards -->
-<app-user-card [name]="userName" [age]="userAge" (userSelected)="onUserSelected($event)">
+<!-- <app-user-card [name]="userName" [age]="userAge" (userSelected)="onUserSelected($event)">
 </app-user-card>
 
 <app-user-card [name]="'Aman'" [age]="28" (userSelected)="onUserSelected($event)">
-</app-user-card>
+</app-user-card> -->
 
-<hr>
+<!-- <hr> -->
 
 <!-- Counter -->
-<app-counter [initialCount]="2" (countChanged)="onCounterChanged($event)">
-</app-counter>
+<!-- <app-counter [initialCount]="2" (countChanged)="onCounterChanged($event)">
+</app-counter> -->
 
-<p>Current Counter Value: {{ counterValue }}</p>
+<!-- <p>Current Counter Value: {{ counterValue }}</p> -->
+
+<app-user-card *ngFor="let user of users" [name]="user.name" [age]="user.age" (userSelected)="onUserSelected($event)">
+</app-user-card>
+
+<p>Selected User: {{ selectedUser }}</p>

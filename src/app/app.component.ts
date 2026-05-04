@@ -8,11 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   userName = 'John Doe';
   userAge = 30;
-
   counterValue = 0;
 
+  users = [
+    { name: 'Jibran', age: 23 },
+    { name: 'Aman', age: 28 }
+  ];
+
+  selectedUser = '';
   onUserSelected(name: string) {
     console.log('Selected User:', name);
+    this.selectedUser = name;
   }
 
   onCounterChanged(value: number) {
