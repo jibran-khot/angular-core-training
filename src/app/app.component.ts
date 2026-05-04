@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-core-training';
+  userName: string = 'John Doe';
+  userAge: number = 30;
+
+  onUserSelected(name: string) {
+    console.log('Selected User: ', name);
+  }
 }

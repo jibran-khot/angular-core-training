@@ -1,1 +1,5 @@
-<app-user-card></app-user-card>
+<app-user-card [name]="userName" [age]="userAge" (userSelected)="onUserSelected($event)">
+</app-user-card>
+
+<app-user-card [name]="'Aman'" [age]="28" (userSelected)="onUserSelected($event)">
+</app-user-card>
