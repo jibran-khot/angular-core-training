@@ -1,27 +1,23 @@
-let users = [
-    { name: "A", age: 15 },
-    { name: "B", age: 22 },
-    { name: "C", age: 30 },
-    { name: "D", age: 12 }
-];
-function groupUsers(users: { name: string, age: number }[]) {
+let numbers = [12, 45, 7, 89, 23];
 
-    let adultCount = 0;
-    let minorCount = 0;
+function findSecondLargest(num: number[]): number {
 
-    for (let user of users) {
-        if (user.age >= 18) {
-            adultCount++;
-        } else {
-            minorCount++;
+    let largest: number = num[0];
+    let secondLargest: number = num[1];
+
+    for (let index = 1; index < num.length; index++) {
+
+        if (num[index] > largest) {
+            secondLargest = largest;
+            largest = num[index];
+        }
+        else if (num[index] > secondLargest && num[index] < largest) {
+            secondLargest = num[index];
         }
     }
 
-    return {
-        adultCount,
-        minorCount
-    };
+    return secondLargest;
 }
 
-let result = groupUsers(users);
-console.log(result);
+let output = findSecondLargest(numbers);
+console.log(output);
