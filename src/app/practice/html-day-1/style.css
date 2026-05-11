@@ -1,5 +1,5 @@
 body {
- background-color: #f4f4f4;
+    background-color: #f4f4f4;
     font-family: 'Times New Roman', Times, serif;
     padding: 20px;
 }
@@ -17,21 +17,26 @@ img {
     border-radius: 10px;
 }
 
-section{
-     background-color: white;
+section {
+    background-color: white;
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 15px;
     box-shadow: 0px 4px 10px gray;
+
+    transition: 0.3s;
 }
 
+section:hover {
+    transform: translateY(-5px);
+}
 
 .container {
-   max-width: 900px;
-   margin: auto;
+    max-width: 900px;
+    margin: auto;
 }
 
-.button{
+.button {
     background-color: cadetblue;
     border: 1px solid black;
     padding: 5px;
@@ -40,54 +45,59 @@ section{
     cursor: pointer;
     width: 80px;
     margin-top: 10px;
+
+    transition: 0.3s;
 }
 
 .button:hover {
- background-color: cornflowerblue ;
+    background-color: cornflowerblue;
+    transform: scale(1.05);
 }
 
-input,textarea,label {
+input,
+textarea,
+label {
     padding: 10px;
     display: block;
     margin-bottom: 5px;
 }
 
-input,textarea {
+input,
+textarea {
     border: 1px solid black;
     border-radius: 8px;
     padding-left: 16px;
-     width: 100%;
+    width: 100%;
     box-sizing: border-box;
 }
 
-.links-container{
+.links-container {
     display: flex;
-   gap: 20px;
+    gap: 20px;
 }
 
-.card-container{
+.card-container {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .card-container section {
-    flex: 1;
+    flex: 1 1 300px;
 }
 
-
-.image-container{
+.image-container {
     display: flex;
     gap: 20px;
 }
 
 .image-container section {
-    flex:1;
+    flex: 1;
 }
 
 .table-container {
     display: block;
 }
-
 
 .flex-practice {
     display: flex;
@@ -96,25 +106,26 @@ input,textarea {
     justify-content: space-evenly;
     align-items: flex-start;
     gap: 20px;
-
 }
 
 .box {
     width: 200px;
     height: 200px;
     background-color: cadetblue;
-
 }
+
 .box2 {
     width: 200px;
     height: 200px;
     background-color: aqua;
 }
+
 .box3 {
     width: 200px;
     height: 200px;
     background-color: cornflowerblue;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -133,11 +144,11 @@ input,textarea {
 .nav-links a {
     text-decoration: none;
     color: darkcyan;
+
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
     color: blue;
     text-decoration: underline;
 }
-
- 
