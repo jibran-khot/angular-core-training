@@ -152,3 +152,28 @@ textarea {
     color: blue;
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+}
+
