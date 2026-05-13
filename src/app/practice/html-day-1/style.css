@@ -177,3 +177,17 @@ textarea {
 
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.grid-box {
+    background-color: cadetblue;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
