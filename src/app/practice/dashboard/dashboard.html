@@ -14,6 +14,7 @@
 
     <div class="dashboard-layout">
 
+        <!-- Sidebar -->
         <aside class="sidebar">
 
             <div class="logo">
@@ -23,7 +24,7 @@
             <nav class="navbar">
 
                 <ul>
-                    <li>Dashboard</li>
+                    <li class="active">Dashboard</li>
                     <li>Users</li>
                     <li>Reports</li>
                     <li>Settings</li>
@@ -33,31 +34,107 @@
 
         </aside>
 
+        <!-- Main Area -->
         <main class="main-area">
+
+            <!-- Header -->
             <header class="dashboard-header">
                 <div class="page-title">Dashboard</div>
                 <span class="user-info">Profile : Admin</span>
             </header>
 
+            <!-- Stats Cards -->
             <section class="stats-grid">
+
                 <div class="stats-card">
                     <h3>Total Users</h3>
                     <p>1250</p>
                 </div>
+
                 <div class="stats-card">
                     <h3>Revenue</h3>
-                    <p>8000</p>
+                    <p>$8000</p>
                 </div>
+
                 <div class="stats-card">
                     <h3>Orders</h3>
                     <p>400</p>
                 </div>
+
                 <div class="stats-card">
                     <h3>Growth</h3>
                     <p>25%</p>
                 </div>
+
             </section>
 
+            <!-- Dashboard Bottom Section -->
+            <section class="dashboard-bottom">
+
+                <!-- Recent Activity -->
+                <div class="panel-card">
+
+                    <h2>Recent Activity</h2>
+
+                    <div class="activity-list">
+
+                        <div class="activity-item">
+                            <div class="avatar"></div>
+
+                            <div class="activity-content">
+                                <p><strong>John</strong> created a new report</p>
+                                <span>2 mins ago</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="avatar"></div>
+
+                            <div class="activity-content">
+                                <p><strong>Sarah</strong> updated an order</p>
+                                <span>10 mins ago</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="avatar"></div>
+
+                            <div class="activity-content">
+                                <p><strong>Mike</strong> deleted a user</p>
+                                <span>1 hour ago</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="avatar"></div>
+
+                            <div class="activity-content">
+                                <p><strong>Emma</strong> added a new product</p>
+                                <span>3 hours ago</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="panel-card">
+
+                    <h2>Quick Actions</h2>
+
+                    <div class="actions-grid">
+
+                        <button>Add User</button>
+                        <button>Create Order</button>
+                        <button>Generate Report</button>
+                        <button>Settings</button>
+
+                    </div>
+
+                </div>
+
+            </section>
 
         </main>
 
