@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class ProductDetailsComponent {
 
+  productName: string = 'Toothbrush';
+  productPrice: number = 200;
+  isInStock: boolean = true;
+  discountPercentage: number = 10;
+  manufacturerEmail: null = null;
+  lastPurchasedDate: undefined = undefined;
+
+
 }
