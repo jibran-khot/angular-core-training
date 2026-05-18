@@ -4,6 +4,7 @@ import { EmployeeStatusComponent } from './employee-status/employee-status.compo
 import { EmployeeCardComponent } from "./employee-card/employee-card.component";
 import { EmployeeListComponent } from "./employee-list/employee-list.component";
 import { ProductListComponent } from "./product-list/product-list.component";
+import { OrderSummaryComponent } from './order-summary/order-summary.component';
 
 @Component({
     selector: 'app-root',
@@ -14,7 +15,8 @@ import { ProductListComponent } from "./product-list/product-list.component";
         ProductDetailsComponent,
         EmployeeCardComponent,
         EmployeeListComponent,
-        ProductListComponent
+        ProductListComponent,
+        OrderSummaryComponent
     ]
 })
 export class AppComponent {
