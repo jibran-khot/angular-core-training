@@ -1,0 +1,23 @@
+<h2>Employee Details</h2>
+
+<p>Name : {{ employeeName }}</p>
+<p>Department : {{ department }}</p>
+<p>Monthly Salary : {{ basicSalary }}</p>
+
+<p>
+    Yearly Salary :
+    {{ calculateYearlySalary(basicSalary) }}
+</p>
+
+<p>
+    Employee Level :
+    {{ getEmployeeLevel(yearsOfExperience) }}
+</p>
+
+<p>
+    {{ getEmployeeDescription() }}
+</p>
+
+<button (click)="welcomeMessage()">
+    Show Welcome
+</button>
