@@ -1,0 +1,13 @@
+<h2>Employee Bonus Details</h2>
+
+<p>{{ showCompanyMessage() }}</p>
+
+@for (employee of employeeBonus; track employee.id) {
+<div>
+    <p><strong>ID:</strong> {{ employee.id }}</p>
+    <p><strong>Name:</strong> {{ employee.name }}</p>
+    <p><strong>Salary:</strong> ₹{{ employee.salary }}</p>
+    <p><strong>Bonus:</strong> ₹{{ calculateBonus(employee.salary) }}</p>
+    <hr>
+</div>
+}
