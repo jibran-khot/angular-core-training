@@ -1,0 +1,15 @@
+<h2>Topic: Optional Parameters</h2>
+
+<div>
+    @for (employee of employees; track employee.id) {
+    <p><strong>ID:</strong> {{ employee.id }} </p>
+    <p><strong>Name:</strong> {{ employee.name }} </p>
+    <p><strong>Position:</strong> {{ employee.position }} </p>
+    <p><Strong>Email:</Strong>
+        @if (employee.id === 1 || employee.id === 3 ) {
+        {{ showEmployeeContact(employee.name,"Jibran@gmail.com") }}
+        } @else
+        {{{ showEmployeeContact(employee.name) }}}
+    </p>
+    }
+</div>
