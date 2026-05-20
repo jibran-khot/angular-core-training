@@ -1,0 +1,19 @@
+<h2>Displaying all employees</h2>
+
+<div>
+    @for (employee of employees; track employee.id) {
+    <p><strong>ID:</strong> {{ employee.id }} </p>
+    <p><strong>Name:</strong> {{ employee.name }} </p>
+    <p><strong>Salary:</strong> {{ employee.salary }} </p>
+    <p><strong>Increment:</strong>
+        @if ( employee.id === 1 || employee.id === 3 ||employee.id === 4 ) {
+        {{ calculateIncrement(employee.salary) }}
+        } @else if (employee.id === 2) {
+        {{ calculateIncrement(employee.salary, 8) }}
+        }
+        @else if (employee.id === 4) {
+        {{ calculateIncrement(employee.salary, 12) }}
+        }
+    </p>
+    }
+</div>
