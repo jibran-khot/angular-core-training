@@ -1,0 +1,11 @@
+<h2>Employee Details</h2>
+<div>
+    @for(employee of employees ;track employee.id){
+    <p><strong>ID:</strong> {{ employee.id }} </p>
+    <p><strong>Name:</strong> {{ employee.name }} </p>
+    <p><strong>Department:</strong> {{ formatDepartment(employee.department) }} </p>
+    <p><strong>Monthly Salary:</strong> {{ employee.salary }} </p>
+    <p><strong>Annual Salary:</strong> {{ calculateAnnualSalary(employee.salary) }} </p>
+    <p><strong>High Earner Status:</strong> {{ isHighEarner(employee.salary) }} </p>
+    }
+</div>
