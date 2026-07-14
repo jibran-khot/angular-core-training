@@ -1,14 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
-interface empData {
-  id: number,
-  name: string,
-  age: number,
-  department: string,
-  salary: number,
-  isActive: boolean
-}
 
 @Component({
   selector: 'app-employee-card',
@@ -17,7 +9,7 @@ interface empData {
   styleUrl: './employee-card.component.css',
 })
 export class EmployeeCardComponent {
-  employee: empData = {
+  employee: any = {
     id: 1,
     name: 'Jibran',
     age: 25,
