@@ -1,0 +1,57 @@
+<h2>Employee Notification System</h2>
+
+@for (employee of employees; track employee.id) {
+
+<div>
+
+    <p><strong>ID:</strong> {{ employee.id }}</p>
+
+    <p><strong>Name:</strong> {{ employee.name }}</p>
+
+    <p><strong>Department:</strong> {{ employee.department }}</p>
+
+    <p>
+
+        <strong>Contact:</strong>
+
+        @if (employee.id === 1) {
+
+        {{ showEmployeeContact(employee.name, "jibran@gmail.com") }}
+
+        } @else if (employee.id === 3) {
+
+        {{ showEmployeeContact(employee.name, "shayan@gmail.com") }}
+
+        } @else {
+
+        {{ showEmployeeContact(employee.name) }}
+
+        }
+
+    </p>
+
+    <p>
+
+        <strong>Notification:</strong>
+
+        @if (employee.id === 2) {
+
+        {{ notificationDuration(8) }}
+
+        } @else if (employee.id === 4) {
+
+        {{ notificationDuration(12) }}
+
+        } @else {
+
+        {{ notificationDuration() }}
+
+        }
+
+    </p>
+
+    <hr>
+
+</div>
+
+}
