@@ -1,0 +1,16 @@
+<h2>Employee Details</h2>
+<div>
+    @for (employee of employees; track employee.id) {
+    <p><strong>ID:</strong> {{ employee.id }} </p>
+    <p><strong>Name:</strong> {{ employee.name }} </p>
+    <p><strong>Department:</strong> {{ employee.department }} </p>
+    <p><strong>Total Expenses:</strong>
+        @if(employee.id === 1) {{{ calculateTotalExpense(500) }}}
+        @else if (employee.id === 2) {{{ calculateTotalExpense(500,1000) }}}
+        @else if (employee.id === 3) {{{ calculateTotalExpense(500,1000,1500) }}}
+        @else if (employee.id === 4) {{{ calculateTotalExpense(500,1000,1500,2000) }}}
+        @else if (employee.id === 5) {{{ calculateTotalExpense(500,1000,1500,2000,2500) }}}
+        @else {}
+    </p>
+    }
+</div>

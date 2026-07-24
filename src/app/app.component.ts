@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { EmployeeContactComponent } from './components/employee-contact/employee-contact.component';
+import { EmployeeExpenseComponent } from "./employee-expense/employee-expense.component";
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    imports: [
-        EmployeeContactComponent
-    ]
+    imports: [EmployeeExpenseComponent]
 })
 export class AppComponent {
 
