@@ -1,0 +1,13 @@
+<h2>Employee Details</h2>
+
+<div>
+    @for (emp of employees; track emp.id) {
+
+    <p><strong>ID:</strong> {{ emp.id }} </p>
+    <p><strong>Name:</strong> {{ emp.name }} </p>
+    <p><strong>Department:</strong> {{ emp.department }} </p>
+    <p><strong>Completed Tasks:</strong> {{ emp.completedTasks }} </p>
+    <p><strong>Welcome Message:</strong> {{ welcomeEmployee(emp.name) }} </p>
+    <p><strong>Performance:</strong> {{ calculatePerformance(emp.completedTasks) }} </p>
+    }
+</div>
