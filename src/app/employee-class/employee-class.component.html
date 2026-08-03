@@ -1,0 +1,13 @@
+<div>
+    @for (employee of employees; track employee.id) {
+
+    <p><strong>ID:</strong> {{ employee.id }}</p>
+    <p><strong>Name:</strong> {{ employee.name }}</p>
+    <p><strong>Department:</strong> {{ employee.department }}</p>
+    <p><strong>Salary:</strong> ₹{{ employee.salary }}</p>
+    <p><strong>Summary:</strong> {{ employee.getEmployeeSummary() }}</p>
+
+    <hr>
+
+    }
+</div>
